@@ -114,6 +114,7 @@
             this.добавянеToolStripMenuItem1.Name = "добавянеToolStripMenuItem1";
             this.добавянеToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.добавянеToolStripMenuItem1.Text = "Добавяне";
+            this.добавянеToolStripMenuItem1.Click += new System.EventHandler(this.добавянеToolStripMenuItem1_Click);
             // 
             // редактиранеToolStripMenuItem1
             // 
@@ -142,17 +143,18 @@
             this.добавянеToolStripMenuItem2.Name = "добавянеToolStripMenuItem2";
             this.добавянеToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.добавянеToolStripMenuItem2.Text = "Добавяне";
+            this.добавянеToolStripMenuItem2.Click += new System.EventHandler(this.добавянеToolStripMenuItem2_Click);
             // 
             // редактиранеToolStripMenuItem2
             // 
             this.редактиранеToolStripMenuItem2.Name = "редактиранеToolStripMenuItem2";
-            this.редактиранеToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.редактиранеToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.редактиранеToolStripMenuItem2.Text = "Редактиране";
             // 
             // изтриванеToolStripMenuItem2
             // 
             this.изтриванеToolStripMenuItem2.Name = "изтриванеToolStripMenuItem2";
-            this.изтриванеToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.изтриванеToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.изтриванеToolStripMenuItem2.Text = "Изтриване";
             // 
             // специалностиToolStripMenuItem
@@ -170,17 +172,18 @@
             this.добавянеToolStripMenuItem3.Name = "добавянеToolStripMenuItem3";
             this.добавянеToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.добавянеToolStripMenuItem3.Text = "Добавяне";
+            this.добавянеToolStripMenuItem3.Click += new System.EventHandler(this.добавянеToolStripMenuItem3_Click);
             // 
             // редактиранеToolStripMenuItem3
             // 
             this.редактиранеToolStripMenuItem3.Name = "редактиранеToolStripMenuItem3";
-            this.редактиранеToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.редактиранеToolStripMenuItem3.Size = new System.Drawing.Size(143, 22);
             this.редактиранеToolStripMenuItem3.Text = "Редактиране";
             // 
             // изтриванеToolStripMenuItem3
             // 
             this.изтриванеToolStripMenuItem3.Name = "изтриванеToolStripMenuItem3";
-            this.изтриванеToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.изтриванеToolStripMenuItem3.Size = new System.Drawing.Size(143, 22);
             this.изтриванеToolStripMenuItem3.Text = "Изтриване";
             // 
             // MainForm

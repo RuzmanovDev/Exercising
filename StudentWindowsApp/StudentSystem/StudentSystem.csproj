@@ -53,6 +53,18 @@
     <Compile Include="AddFormOfEdu.Designer.cs">
       <DependentUpon>AddFormOfEdu.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddEduDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEduDegree.Designer.cs">
+      <DependentUpon>AddEduDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGorups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGorups.Designer.cs">
+      <DependentUpon>AddGorups.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,8 +73,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddSpecialties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSpecialties.Designer.cs">
+      <DependentUpon>AddSpecialties.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEduDegree.resx">
+      <DependentUpon>AddEduDegree.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddFormOfEdu.resx">
       <DependentUpon>AddFormOfEdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGorups.resx">
+      <DependentUpon>AddGorups.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -76,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddSpecialties.resx">
+      <DependentUpon>AddSpecialties.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
