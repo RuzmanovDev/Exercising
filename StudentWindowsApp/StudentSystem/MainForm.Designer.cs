@@ -69,6 +69,7 @@
             this.фToolStripMenuItem.Name = "фToolStripMenuItem";
             this.фToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.фToolStripMenuItem.Text = "Поддръжка";
+            this.фToolStripMenuItem.Click += new System.EventHandler(this.фToolStripMenuItem_Click);
             // 
             // формаToolStripMenuItem
             // 
@@ -92,6 +93,7 @@
             this.редактиранеToolStripMenuItem.Name = "редактиранеToolStripMenuItem";
             this.редактиранеToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.редактиранеToolStripMenuItem.Text = "Редактиране";
+            this.редактиранеToolStripMenuItem.Click += new System.EventHandler(this.редактиранеToolStripMenuItem_Click);
             // 
             // изтриванеToolStripMenuItem
             // 
@@ -112,20 +114,20 @@
             // добавянеToolStripMenuItem1
             // 
             this.добавянеToolStripMenuItem1.Name = "добавянеToolStripMenuItem1";
-            this.добавянеToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.добавянеToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.добавянеToolStripMenuItem1.Text = "Добавяне";
             this.добавянеToolStripMenuItem1.Click += new System.EventHandler(this.добавянеToolStripMenuItem1_Click);
             // 
             // редактиранеToolStripMenuItem1
             // 
             this.редактиранеToolStripMenuItem1.Name = "редактиранеToolStripMenuItem1";
-            this.редактиранеToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.редактиранеToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.редактиранеToolStripMenuItem1.Text = "Редактиране";
             // 
             // изтриванеToolStripMenuItem1
             // 
             this.изтриванеToolStripMenuItem1.Name = "изтриванеToolStripMenuItem1";
-            this.изтриванеToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.изтриванеToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.изтриванеToolStripMenuItem1.Text = "Изтриване";
             // 
             // групиToolStripMenuItem
@@ -141,7 +143,7 @@
             // добавянеToolStripMenuItem2
             // 
             this.добавянеToolStripMenuItem2.Name = "добавянеToolStripMenuItem2";
-            this.добавянеToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.добавянеToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.добавянеToolStripMenuItem2.Text = "Добавяне";
             this.добавянеToolStripMenuItem2.Click += new System.EventHandler(this.добавянеToolStripMenuItem2_Click);
             // 
@@ -170,7 +172,7 @@
             // добавянеToolStripMenuItem3
             // 
             this.добавянеToolStripMenuItem3.Name = "добавянеToolStripMenuItem3";
-            this.добавянеToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.добавянеToolStripMenuItem3.Size = new System.Drawing.Size(143, 22);
             this.добавянеToolStripMenuItem3.Text = "Добавяне";
             this.добавянеToolStripMenuItem3.Click += new System.EventHandler(this.добавянеToolStripMenuItem3_Click);
             // 

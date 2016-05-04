@@ -36,5 +36,16 @@
             AddSpecialties addSpecialTies = new AddSpecialties();
             addSpecialTies.ShowDialog();
         }
+
+        private void редактиранеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateEducationForm updateEduForm = new UpdateEducationForm();
+            updateEduForm.ShowDialog();
+        }
+
+        private void фToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
