@@ -52,6 +52,11 @@
     <Compile Include="AddCustomersForm.Designer.cs">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MassiveDynamicDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MassiveDynamicDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MassiveDynamicMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +80,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="MassiveDynamicDataSet.xsc">
+      <DependentUpon>MassiveDynamicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveDynamicDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MassiveDynamicDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MassiveDynamicDataSet.xss">
+      <DependentUpon>MassiveDynamicDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
