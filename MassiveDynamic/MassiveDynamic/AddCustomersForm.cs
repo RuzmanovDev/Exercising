@@ -26,25 +26,23 @@
             con.ConnectionString =
             ConfigurationManager.ConnectionStrings["MassiveDynamic.Properties.Settings.MassiveDynamicConnectionString"].ConnectionString;
             //символен низ със заявката към базата данни
-            string insertIntoId = "insert into Customers (CustomerID) values ('" +
-           CustomerIdAddTextBox.Text + "')";
-            string inserIntoCustomerName = "insert into Customers (CompanyName) values ('" +
-           CompanyNameTextBox.Text + "')";
-            string inserIntoCustomerAddress = "insert into Customers (Address) values ('" +
-          AddressTextBox.Text + "')";
-            string inserIntoCustomerPhone = "insert into Customers (Phone) values ('" +
-        CustomerPhoneTextBox.Text + "')";
-            //създаване на командата
-            SqlCommand com = new SqlCommand(insertIntoId, con);
-            SqlCommand com1 = new SqlCommand(inserIntoCustomerName, con);
-            SqlCommand com2 = new SqlCommand(inserIntoCustomerAddress, con);
-            SqlCommand com3 = new SqlCommand(inserIntoCustomerPhone, con);
+            string insertIntoId = "'" + CustomerIdAddTextBox.Text + "'";
+            string inserIntoCustomerName = "'" + CompanyNameTextBox.Text + "'";
+            string inserIntoCustomerAddress = "'" + AddressTextBox.Text + "'";
+            string inserIntoCustomerPhone = "'" + CustomerPhoneTextBox.Text + "'";
+            //INSERT INTO table_name (column1,column2,column3,...)  VALUES(value1, value2, value3,...);
+            string insertCommand = string.Format("insert into Customers (CustomerID,CompanyName,Address,Phone) values({0},{1},{2},{3});", insertIntoId, inserIntoCustomerName, inserIntoCustomerAddress, inserIntoCustomerPhone);
+
+            SqlCommand com = new SqlCommand(insertCommand, con);
+            //SqlCommand com1 = new SqlCommand(inserIntoCustomerName, con);
+            //SqlCommand com2 = new SqlCommand(inserIntoCustomerAddress, con);
+            //SqlCommand com3 = new SqlCommand(inserIntoCustomerPhone, con);
 
             //определяне на типа на командата - в конкретния случай е текст
             com.CommandType = CommandType.Text;
-            com1.CommandType = CommandType.Text;
-            com2.CommandType = CommandType.Text;
-            com3.CommandType = CommandType.Text;
+            //com1.CommandType = CommandType.Text;
+            //com2.CommandType = CommandType.Text;
+            //com3.CommandType = CommandType.Text;
 
 
             try
@@ -54,9 +52,9 @@
                 con.Open();
                 //изпълняваме командата / в този случай нямаме връщан резултат
                 com.ExecuteNonQuery();
-                com1.ExecuteNonQuery();
-                com2.ExecuteNonQuery();
-                com3.ExecuteNonQuery();
+                //com1.ExecuteNonQuery();
+                //com2.ExecuteNonQuery();
+                //com3.ExecuteNonQuery();
 
                 //извеждаме съобщение, че всичко е преминало успешно
                 MessageBox.Show("Данните за форма на обучение са добавени успешно!",
