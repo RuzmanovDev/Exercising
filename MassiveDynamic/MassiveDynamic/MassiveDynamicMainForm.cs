@@ -19,7 +19,8 @@ namespace MassiveDynamic
 
         private void AddToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AddCustomersForm addCustomersForm = new AddCustomersForm();
+            addCustomersForm.ShowDialog();
         }
     }
 }
