@@ -32,7 +32,7 @@
             this.поддръжкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.клиентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.редактиранеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EditCustomersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изтриванеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             // 
             this.клиентиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddToolStripMenuItem,
-            this.редактиранеToolStripMenuItem,
+            this.EditCustomersMenuItem,
             this.изтриванеToolStripMenuItem});
             this.клиентиToolStripMenuItem.Name = "клиентиToolStripMenuItem";
             this.клиентиToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
@@ -72,11 +72,12 @@
             this.AddToolStripMenuItem.Text = "Добавяне";
             this.AddToolStripMenuItem.Click += new System.EventHandler(this.AddToolStripMenuItem_Click);
             // 
-            // редактиранеToolStripMenuItem
+            // EditCustomersMenuItem
             // 
-            this.редактиранеToolStripMenuItem.Name = "редактиранеToolStripMenuItem";
-            this.редактиранеToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.редактиранеToolStripMenuItem.Text = "Редактиране";
+            this.EditCustomersMenuItem.Name = "EditCustomersMenuItem";
+            this.EditCustomersMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.EditCustomersMenuItem.Text = "Редактиране";
+            this.EditCustomersMenuItem.Click += new System.EventHandler(this.EditCustomersMenuItem_Click);
             // 
             // изтриванеToolStripMenuItem
             // 
@@ -107,7 +108,7 @@
         private System.Windows.Forms.ToolStripMenuItem поддръжкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem клиентиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AddToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem редактиранеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EditCustomersMenuItem;
         private System.Windows.Forms.ToolStripMenuItem изтриванеToolStripMenuItem;
     }
 }

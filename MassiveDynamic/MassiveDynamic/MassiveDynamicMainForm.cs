@@ -22,5 +22,11 @@ namespace MassiveDynamic
             AddCustomersForm addCustomersForm = new AddCustomersForm();
             addCustomersForm.ShowDialog();
         }
+
+        private void EditCustomersMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateCustomersForm update = new UpdateCustomersForm();
+            update.ShowDialog();
+        }
     }
 }

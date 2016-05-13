@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pesho = new StudentSystem.Pesho();
-            this.educationFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.educationFormTableAdapter = new StudentSystem.PeshoTableAdapters.EducationFormTableAdapter();
             this.eFIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.educFormDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.educationFormBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pesho = new StudentSystem.Pesho();
+            this.educationFormTableAdapter = new StudentSystem.PeshoTableAdapters.EducationFormTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pesho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationFormBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pesho)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,21 +55,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(476, 282);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
-            // 
-            // pesho
-            // 
-            this.pesho.DataSetName = "Pesho";
-            this.pesho.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // educationFormBindingSource
-            // 
-            this.educationFormBindingSource.DataMember = "EducationForm";
-            this.educationFormBindingSource.DataSource = this.pesho;
-            // 
-            // educationFormTableAdapter
-            // 
-            this.educationFormTableAdapter.ClearBeforeFill = true;
             // 
             // eFIDDataGridViewTextBoxColumn
             // 
@@ -85,6 +72,20 @@
             this.educFormDataGridViewTextBoxColumn.Name = "educFormDataGridViewTextBoxColumn";
             this.educFormDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+            // educationFormBindingSource
+            // 
+            this.educationFormBindingSource.DataMember = "EducationForm";
+            this.educationFormBindingSource.DataSource = this.pesho;
+            // 
+            // pesho
+            // 
+            this.pesho.DataSetName = "Pesho";
+            this.pesho.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // educationFormTableAdapter
+            // 
+            this.educationFormTableAdapter.ClearBeforeFill = true;
+            // 
             // UpdateEducationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,8 +96,8 @@
             this.Text = "Промяна на форма на обучение";
             this.Load += new System.EventHandler(this.UpdateEducationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pesho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.educationFormBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pesho)).EndInit();
             this.ResumeLayout(false);
 
         }

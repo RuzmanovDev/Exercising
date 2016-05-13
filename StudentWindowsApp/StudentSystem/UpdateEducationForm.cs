@@ -37,5 +37,10 @@ namespace StudentSystem
                 MessageBox.Show("Промяната не е реализирана!", "Съобщение:");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
