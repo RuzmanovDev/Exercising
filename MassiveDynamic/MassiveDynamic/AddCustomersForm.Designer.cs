@@ -111,6 +111,7 @@
             this.AddCustomersButton.TabIndex = 8;
             this.AddCustomersButton.Text = "Добави";
             this.AddCustomersButton.UseVisualStyleBackColor = true;
+            this.AddCustomersButton.Click += new System.EventHandler(this.AddCustomersButton_Click);
             // 
             // AddCustomersForm
             // 
