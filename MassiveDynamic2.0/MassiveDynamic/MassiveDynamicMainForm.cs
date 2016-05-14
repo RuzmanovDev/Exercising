@@ -102,5 +102,35 @@ namespace MassiveDynamic
             DeleteProductForm del = new DeleteProductForm();
             del.ShowDialog();
         }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AddOrdersForm ad = new AddOrdersForm();
+            ad.ShowDialog();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditOrdersForm edit = new EditOrdersForm();
+            edit.ShowDialog();
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteOrdersForm del = new DeleteOrdersForm();
+            del.ShowDialog();
+        }
+
+        private void addToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AddOrderDetailsForm add = new AddOrderDetailsForm();
+            add.ShowDialog();
+        }
+
+        private void editToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            EditOrderDetailsForm edit = new EditOrderDetailsForm();
+            edit.ShowDialog();
+        }
     }
 }

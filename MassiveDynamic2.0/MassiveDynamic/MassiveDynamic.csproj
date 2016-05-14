@@ -60,6 +60,18 @@
     <Compile Include="AddCustomersForm.Designer.cs">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddOrderDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrderDetailsForm.Designer.cs">
+      <DependentUpon>AddOrderDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrdersForm.Designer.cs">
+      <DependentUpon>AddOrdersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddProductsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     <Compile Include="DeleteCustomesForm.Designer.cs">
       <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOrdersForm.Designer.cs">
+      <DependentUpon>DeleteOrdersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +124,18 @@
     </Compile>
     <Compile Include="EditCategoryForm.Designer.cs">
       <DependentUpon>EditCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrderDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrderDetailsForm.Designer.cs">
+      <DependentUpon>EditOrderDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrdersForm.Designer.cs">
+      <DependentUpon>EditOrdersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditProductsForm.cs">
       <SubType>Form</SubType>
@@ -171,6 +201,12 @@
     <EmbeddedResource Include="AddCustomersForm.resx">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddOrderDetailsForm.resx">
+      <DependentUpon>AddOrderDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrdersForm.resx">
+      <DependentUpon>AddOrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddProductsForm.resx">
       <DependentUpon>AddProductsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +219,9 @@
     <EmbeddedResource Include="DeleteCustomesForm.resx">
       <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOrdersForm.resx">
+      <DependentUpon>DeleteOrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteProductForm.resx">
       <DependentUpon>DeleteProductForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditCategoryForm.resx">
       <DependentUpon>EditCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrderDetailsForm.resx">
+      <DependentUpon>EditOrderDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrdersForm.resx">
+      <DependentUpon>EditOrdersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProductsForm.resx">
       <DependentUpon>EditProductsForm.cs</DependentUpon>

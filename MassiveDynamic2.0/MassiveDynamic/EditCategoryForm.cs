@@ -37,6 +37,7 @@ namespace MassiveDynamic
             }
             catch (Exception)
             {
+                MessageBox.Show("БУМ!", "Съобщение:");
 
             }
         }
