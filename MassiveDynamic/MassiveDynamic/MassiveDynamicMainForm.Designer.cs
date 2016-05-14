@@ -34,13 +34,20 @@
             this.AddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCustomersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.masterdetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.критерииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EditCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.поддръжкаToolStripMenuItem});
+            this.поддръжкаToolStripMenuItem,
+            this.masterdetailToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(634, 24);
@@ -50,7 +57,8 @@
             // поддръжкаToolStripMenuItem
             // 
             this.поддръжкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.клиентиToolStripMenuItem});
+            this.клиентиToolStripMenuItem,
+            this.критерииToolStripMenuItem});
             this.поддръжкаToolStripMenuItem.Name = "поддръжкаToolStripMenuItem";
             this.поддръжкаToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.поддръжкаToolStripMenuItem.Text = "Поддръжка";
@@ -86,6 +94,49 @@
             this.deleteToolStripMenuItem.Text = "Изтриване";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // masterdetailToolStripMenuItem
+            // 
+            this.masterdetailToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ordersToolStripMenuItem});
+            this.masterdetailToolStripMenuItem.Name = "masterdetailToolStripMenuItem";
+            this.masterdetailToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.masterdetailToolStripMenuItem.Text = "master-detail";
+            // 
+            // ordersToolStripMenuItem
+            // 
+            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
+            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.ordersToolStripMenuItem.Text = "Orders";
+            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
+            // 
+            // критерииToolStripMenuItem
+            // 
+            this.критерииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddCategoryToolStripMenuItem,
+            this.EditCategoryToolStripMenuItem,
+            this.DeleteCategoryToolStripMenuItem});
+            this.критерииToolStripMenuItem.Name = "критерииToolStripMenuItem";
+            this.критерииToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.критерииToolStripMenuItem.Text = "Категории";
+            // 
+            // AddCategoryToolStripMenuItem
+            // 
+            this.AddCategoryToolStripMenuItem.Name = "AddCategoryToolStripMenuItem";
+            this.AddCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.AddCategoryToolStripMenuItem.Text = "Добавяне";
+            // 
+            // EditCategoryToolStripMenuItem
+            // 
+            this.EditCategoryToolStripMenuItem.Name = "EditCategoryToolStripMenuItem";
+            this.EditCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.EditCategoryToolStripMenuItem.Text = "Редакиране";
+            // 
+            // DeleteCategoryToolStripMenuItem
+            // 
+            this.DeleteCategoryToolStripMenuItem.Name = "DeleteCategoryToolStripMenuItem";
+            this.DeleteCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.DeleteCategoryToolStripMenuItem.Text = "Изтриване";
+            // 
             // MassiveDynamicMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,6 +162,12 @@
         private System.Windows.Forms.ToolStripMenuItem AddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem EditCustomersMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem masterdetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem критерииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddCategoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EditCategoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DeleteCategoryToolStripMenuItem;
     }
 }
 
