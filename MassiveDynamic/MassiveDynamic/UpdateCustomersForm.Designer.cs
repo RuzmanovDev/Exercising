@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.UpdateCustomersGrid = new System.Windows.Forms.DataGridView();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.massiveDynamicDataSet = new MassiveDynamic.MassiveDynamicDataSet();
-            this.customersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.CustomersTableAdapter();
-            this.fKOrdersCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ordersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.OrdersTableAdapter();
-            this.customersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.customersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companyNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.massiveDynamicDataSet = new MassiveDynamic.MassiveDynamicDataSet();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.CustomersTableAdapter();
+            this.fKOrdersCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.OrdersTableAdapter();
+            this.customersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UpdateCustomersGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersCustomersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // UpdateCustomersGrid
@@ -66,39 +66,6 @@
             this.UpdateCustomersGrid.Size = new System.Drawing.Size(450, 291);
             this.UpdateCustomersGrid.TabIndex = 1;
             this.UpdateCustomersGrid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerEditEvent);
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.massiveDynamicDataSet;
-            // 
-            // massiveDynamicDataSet
-            // 
-            this.massiveDynamicDataSet.DataSetName = "MassiveDynamicDataSet";
-            this.massiveDynamicDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customersTableAdapter
-            // 
-            this.customersTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKOrdersCustomersBindingSource
-            // 
-            this.fKOrdersCustomersBindingSource.DataMember = "FK_Orders_Customers";
-            this.fKOrdersCustomersBindingSource.DataSource = this.customersBindingSource;
-            // 
-            // ordersTableAdapter
-            // 
-            this.ordersTableAdapter.ClearBeforeFill = true;
-            // 
-            // customersBindingSource1
-            // 
-            this.customersBindingSource1.DataMember = "Customers";
-            this.customersBindingSource1.DataSource = this.massiveDynamicDataSet;
-            // 
-            // customersBindingSource2
-            // 
-            this.customersBindingSource2.DataMember = "Customers";
-            this.customersBindingSource2.DataSource = this.massiveDynamicDataSet;
             // 
             // customerIDDataGridViewTextBoxColumn
             // 
@@ -124,6 +91,39 @@
             this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             // 
+            // customersBindingSource2
+            // 
+            this.customersBindingSource2.DataMember = "Customers";
+            this.customersBindingSource2.DataSource = this.massiveDynamicDataSet;
+            // 
+            // massiveDynamicDataSet
+            // 
+            this.massiveDynamicDataSet.DataSetName = "MassiveDynamicDataSet";
+            this.massiveDynamicDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.massiveDynamicDataSet;
+            // 
+            // customersTableAdapter
+            // 
+            this.customersTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKOrdersCustomersBindingSource
+            // 
+            this.fKOrdersCustomersBindingSource.DataMember = "FK_Orders_Customers";
+            this.fKOrdersCustomersBindingSource.DataSource = this.customersBindingSource;
+            // 
+            // ordersTableAdapter
+            // 
+            this.ordersTableAdapter.ClearBeforeFill = true;
+            // 
+            // customersBindingSource1
+            // 
+            this.customersBindingSource1.DataMember = "Customers";
+            this.customersBindingSource1.DataSource = this.massiveDynamicDataSet;
+            // 
             // UpdateCustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,11 +135,11 @@
             this.Text = "UpdateCustomersForm";
             this.Load += new System.EventHandler(this.UpdateCustomersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.UpdateCustomersGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersCustomersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -17,8 +17,7 @@
         {
             SqlConnection con = new SqlConnection();
             //символен низ за връзка към базата данни – взема се от файл с име app.config
-            con.ConnectionString =
-            ConfigurationManager.ConnectionStrings["MassiveDynamic.Properties.Settings.MassiveDynamicConnectionString"].ConnectionString;
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["MassiveDynamic.Properties.Settings.MassiveDynamicConnectionString"].ConnectionString;
             //символен низ със заявката към базата данни
             string insertIntoId = "'" + CustomerIdAddTextBox.Text + "'";
             string inserIntoCustomerName = "'" + CompanyNameTextBox.Text + "'";
@@ -29,7 +28,7 @@
             string insertCommand = string.Format("insert into Customers (CustomerID,CompanyName,Address,Phone) values({0},{1},{2},{3});", insertIntoId, inserIntoCustomerName, inserIntoCustomerAddress, inserIntoCustomerPhone);
 
             SqlCommand com = new SqlCommand(insertCommand, con);
-   
+
             //определяне на типа на командата - в конкретния случай е текст
             com.CommandType = CommandType.Text;
 

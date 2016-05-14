@@ -33,7 +33,7 @@
             this.клиентиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCustomersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.изтриванеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             this.клиентиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddToolStripMenuItem,
             this.EditCustomersMenuItem,
-            this.изтриванеToolStripMenuItem});
+            this.deleteToolStripMenuItem});
             this.клиентиToolStripMenuItem.Name = "клиентиToolStripMenuItem";
             this.клиентиToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.клиентиToolStripMenuItem.Text = "Клиенти";
@@ -79,11 +79,12 @@
             this.EditCustomersMenuItem.Text = "Редактиране";
             this.EditCustomersMenuItem.Click += new System.EventHandler(this.EditCustomersMenuItem_Click);
             // 
-            // изтриванеToolStripMenuItem
+            // deleteToolStripMenuItem
             // 
-            this.изтриванеToolStripMenuItem.Name = "изтриванеToolStripMenuItem";
-            this.изтриванеToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.изтриванеToolStripMenuItem.Text = "Изтриване";
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem.Text = "Изтриване";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // MassiveDynamicMainForm
             // 
@@ -109,7 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem клиентиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem EditCustomersMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem изтриванеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
 

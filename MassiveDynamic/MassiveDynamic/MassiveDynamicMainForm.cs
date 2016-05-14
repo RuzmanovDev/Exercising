@@ -28,5 +28,11 @@ namespace MassiveDynamic
             UpdateCustomersForm update = new UpdateCustomersForm();
             update.ShowDialog();
         }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteCustomesForm delete = new DeleteCustomesForm();
+            delete.ShowDialog();
+        }
     }
 }

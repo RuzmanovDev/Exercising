@@ -54,6 +54,12 @@
     <Compile Include="AddCustomersForm.Designer.cs">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteCustomesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCustomesForm.Designer.cs">
+      <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MassiveDynamicDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="AddCustomersForm.resx">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCustomesForm.resx">
+      <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MassiveDynamicMainForm.resx">
       <DependentUpon>MassiveDynamicMainForm.cs</DependentUpon>
