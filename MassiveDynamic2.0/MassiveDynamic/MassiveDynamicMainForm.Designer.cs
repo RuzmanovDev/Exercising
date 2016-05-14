@@ -185,6 +185,7 @@
             this.editShippersToolStripMenuItem.Name = "editShippersToolStripMenuItem";
             this.editShippersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editShippersToolStripMenuItem.Text = "Редактирай";
+            this.editShippersToolStripMenuItem.Click += new System.EventHandler(this.editShippersToolStripMenuItem_Click);
             // 
             // deleteShippersToolStripMenuItem
             // 

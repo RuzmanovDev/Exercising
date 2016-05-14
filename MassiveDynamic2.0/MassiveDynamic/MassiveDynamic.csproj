@@ -89,6 +89,12 @@
     <Compile Include="EditCategoryForm.Designer.cs">
       <DependentUpon>EditCategoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditShippersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditShippersForm.Designer.cs">
+      <DependentUpon>EditShippersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListCusomersAdresses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditCategoryForm.resx">
       <DependentUpon>EditCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditShippersForm.resx">
+      <DependentUpon>EditShippersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListCusomersAdresses.resx">
       <DependentUpon>ListCusomersAdresses.cs</DependentUpon>
