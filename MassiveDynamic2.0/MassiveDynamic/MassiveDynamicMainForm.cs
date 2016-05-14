@@ -77,5 +77,12 @@ namespace MassiveDynamic
             EditShippersForm edit = new EditShippersForm();
             edit.ShowDialog();
         }
+
+        private void deleteShippersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteShipperForm del = new DeleteShipperForm();
+            del.ShowDialog();
+
+        }
     }
 }

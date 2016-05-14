@@ -192,6 +192,7 @@
             this.deleteShippersToolStripMenuItem.Name = "deleteShippersToolStripMenuItem";
             this.deleteShippersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteShippersToolStripMenuItem.Text = "Изтриване";
+            this.deleteShippersToolStripMenuItem.Click += new System.EventHandler(this.deleteShippersToolStripMenuItem_Click);
             // 
             // MassiveDynamicMainForm
             // 
