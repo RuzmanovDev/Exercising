@@ -84,5 +84,11 @@ namespace MassiveDynamic
             del.ShowDialog();
 
         }
+
+        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProductsForm add = new AddProductsForm();
+            add.ShowDialog();
+        }
     }
 }
