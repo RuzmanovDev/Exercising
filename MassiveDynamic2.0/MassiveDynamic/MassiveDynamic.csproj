@@ -60,6 +60,12 @@
     <Compile Include="AddCustomersForm.Designer.cs">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddShipperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddShipperForm.Designer.cs">
+      <DependentUpon>AddShipperForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddCustomersForm.resx">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddShipperForm.resx">
+      <DependentUpon>AddShipperForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteCategoryForm.resx">
       <DependentUpon>DeleteCategoryForm.cs</DependentUpon>

@@ -65,5 +65,11 @@ namespace MassiveDynamic
             DeleteCategoryForm del = new DeleteCategoryForm();
             del.ShowDialog();
         }
+
+        private void addShipersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddShipperForm add = new AddShipperForm();
+            add.ShowDialog();
+        }
     }
 }
