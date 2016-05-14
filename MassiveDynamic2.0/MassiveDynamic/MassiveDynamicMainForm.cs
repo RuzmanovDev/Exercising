@@ -46,5 +46,24 @@ namespace MassiveDynamic
             ListCusomersAdresses filter = new ListCusomersAdresses();
             filter.ShowDialog();
         }
+
+        private void AddCategoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCategoryForm ad = new AddCategoryForm();
+            ad.ShowDialog();
+        }
+
+        private void EditCategoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditCategoryForm edit = new EditCategoryForm();
+            edit.ShowDialog();
+
+        }
+
+        private void DeleteCategoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteCategoryForm del = new DeleteCategoryForm();
+            del.ShowDialog();
+        }
     }
 }

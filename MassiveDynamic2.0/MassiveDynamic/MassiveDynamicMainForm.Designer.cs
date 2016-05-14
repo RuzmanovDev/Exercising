@@ -34,12 +34,12 @@
             this.AddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCustomersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.masterdetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.критерииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteCategoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.masterdetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.referanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerNameAdressToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -97,21 +97,6 @@
             this.deleteToolStripMenuItem.Text = "Изтриване";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
-            // masterdetailToolStripMenuItem
-            // 
-            this.masterdetailToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ordersToolStripMenuItem});
-            this.masterdetailToolStripMenuItem.Name = "masterdetailToolStripMenuItem";
-            this.masterdetailToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.masterdetailToolStripMenuItem.Text = "master-detail";
-            // 
-            // ordersToolStripMenuItem
-            // 
-            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
-            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.ordersToolStripMenuItem.Text = "Orders";
-            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
-            // 
             // критерииToolStripMenuItem
             // 
             this.критерииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -127,18 +112,36 @@
             this.AddCategoryToolStripMenuItem.Name = "AddCategoryToolStripMenuItem";
             this.AddCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.AddCategoryToolStripMenuItem.Text = "Добавяне";
+            this.AddCategoryToolStripMenuItem.Click += new System.EventHandler(this.AddCategoryToolStripMenuItem_Click);
             // 
             // EditCategoryToolStripMenuItem
             // 
             this.EditCategoryToolStripMenuItem.Name = "EditCategoryToolStripMenuItem";
             this.EditCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.EditCategoryToolStripMenuItem.Text = "Редакиране";
+            this.EditCategoryToolStripMenuItem.Click += new System.EventHandler(this.EditCategoryToolStripMenuItem_Click);
             // 
             // DeleteCategoryToolStripMenuItem
             // 
             this.DeleteCategoryToolStripMenuItem.Name = "DeleteCategoryToolStripMenuItem";
             this.DeleteCategoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.DeleteCategoryToolStripMenuItem.Text = "Изтриване";
+            this.DeleteCategoryToolStripMenuItem.Click += new System.EventHandler(this.DeleteCategoryToolStripMenuItem_Click);
+            // 
+            // masterdetailToolStripMenuItem
+            // 
+            this.masterdetailToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ordersToolStripMenuItem});
+            this.masterdetailToolStripMenuItem.Name = "masterdetailToolStripMenuItem";
+            this.masterdetailToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.masterdetailToolStripMenuItem.Text = "master-detail";
+            // 
+            // ordersToolStripMenuItem
+            // 
+            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
+            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.ordersToolStripMenuItem.Text = "Orders";
+            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
             // 
             // referanceToolStripMenuItem
             // 

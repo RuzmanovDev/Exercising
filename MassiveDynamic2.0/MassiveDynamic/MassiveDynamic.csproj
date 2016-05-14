@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategoryForm.Designer.cs">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddCustomersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,11 +65,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomersDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DeleteCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCategoryForm.Designer.cs">
+      <DependentUpon>DeleteCategoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteCustomesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeleteCustomesForm.Designer.cs">
       <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCategoryForm.Designer.cs">
+      <DependentUpon>EditCategoryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ListCusomersAdresses.cs">
       <SubType>Form</SubType>
@@ -111,11 +129,20 @@
     <Compile Include="UpdateCustomersForm.Designer.cs">
       <DependentUpon>UpdateCustomersForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCategoryForm.resx">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddCustomersForm.resx">
       <DependentUpon>AddCustomersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCategoryForm.resx">
+      <DependentUpon>DeleteCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteCustomesForm.resx">
       <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCategoryForm.resx">
+      <DependentUpon>EditCategoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListCusomersAdresses.resx">
       <DependentUpon>ListCusomersAdresses.cs</DependentUpon>
