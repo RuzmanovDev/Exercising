@@ -90,5 +90,17 @@ namespace MassiveDynamic
             AddProductsForm add = new AddProductsForm();
             add.ShowDialog();
         }
+
+        private void editProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditProductsForm edit = new EditProductsForm();
+            edit.ShowDialog();
+        }
+
+        private void deleteProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteProductForm del = new DeleteProductForm();
+            del.ShowDialog();
+        }
     }
 }

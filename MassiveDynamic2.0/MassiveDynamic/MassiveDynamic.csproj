@@ -89,6 +89,12 @@
     <Compile Include="DeleteCustomesForm.Designer.cs">
       <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProductForm.Designer.cs">
+      <DependentUpon>DeleteProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteShipperForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="EditCategoryForm.Designer.cs">
       <DependentUpon>EditCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductsForm.Designer.cs">
+      <DependentUpon>EditProductsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditShippersForm.cs">
       <SubType>Form</SubType>
@@ -171,11 +183,17 @@
     <EmbeddedResource Include="DeleteCustomesForm.resx">
       <DependentUpon>DeleteCustomesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProductForm.resx">
+      <DependentUpon>DeleteProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteShipperForm.resx">
       <DependentUpon>DeleteShipperForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditCategoryForm.resx">
       <DependentUpon>EditCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProductsForm.resx">
+      <DependentUpon>EditProductsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditShippersForm.resx">
       <DependentUpon>EditShippersForm.cs</DependentUpon>
