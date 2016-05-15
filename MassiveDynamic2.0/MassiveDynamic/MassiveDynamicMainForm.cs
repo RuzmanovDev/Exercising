@@ -38,7 +38,7 @@ namespace MassiveDynamic
         private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OrderOrderDetails md = new OrderOrderDetails();
-           
+
             md.ShowDialog();
         }
 
@@ -138,6 +138,12 @@ namespace MassiveDynamic
         {
             Customers_Orders_Master work = new Customers_Orders_Master();
             work.ShowDialog();
+        }
+
+        private void categoryProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoryProductsMaster cm = new CategoryProductsMaster();
+            cm.ShowDialog();
         }
     }
 }

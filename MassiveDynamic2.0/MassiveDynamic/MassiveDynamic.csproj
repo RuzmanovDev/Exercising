@@ -84,6 +84,17 @@
     <Compile Include="AddShipperForm.Designer.cs">
       <DependentUpon>AddShipperForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CategoriesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoriesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryProductsMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryProductsMaster.Designer.cs">
+      <DependentUpon>CategoryProductsMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customers-Orders-Master.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +192,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MassiveDynamicDataSet21.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MassiveDynamicDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MassiveDynamicDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MassiveDynamicMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +230,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OrdersShippersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ProductsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductsDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShippersDataSet1.Designer.cs">
@@ -244,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddShipperForm.resx">
       <DependentUpon>AddShipperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryProductsMaster.resx">
+      <DependentUpon>CategoryProductsMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customers-Orders-Master.resx">
       <DependentUpon>Customers-Orders-Master.cs</DependentUpon>
@@ -302,6 +326,17 @@
     <EmbeddedResource Include="UpdateCustomersForm.resx">
       <DependentUpon>UpdateCustomersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CategoriesDataSet1.xsc">
+      <DependentUpon>CategoriesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CategoriesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoriesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CategoriesDataSet1.xss">
+      <DependentUpon>CategoriesDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="CustomersDataSet1.xsc">
       <DependentUpon>CustomersDataSet1.xsd</DependentUpon>
     </None>
@@ -357,6 +392,17 @@
     <None Include="MassiveDynamicDataSet21.xss">
       <DependentUpon>MassiveDynamicDataSet21.xsd</DependentUpon>
     </None>
+    <None Include="MassiveDynamicDataSet3.xsc">
+      <DependentUpon>MassiveDynamicDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveDynamicDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MassiveDynamicDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MassiveDynamicDataSet3.xss">
+      <DependentUpon>MassiveDynamicDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="OrderDetails.xsc">
       <DependentUpon>OrderDetails.xsd</DependentUpon>
     </None>
@@ -389,6 +435,17 @@
     </None>
     <None Include="OrdersShippersDataSet.xss">
       <DependentUpon>OrdersShippersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductsDataSet1.xsc">
+      <DependentUpon>ProductsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProductsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductsDataSet1.xss">
+      <DependentUpon>ProductsDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
