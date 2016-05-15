@@ -37,6 +37,7 @@
             this.orderDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.massiveDynamicDataSet = new MassiveDynamic.MassiveDynamicDataSet();
             this.orderDetailsTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.OrderDetailsTableAdapter();
+            this.ExportOrderDetailsButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).BeginInit();
@@ -54,10 +55,9 @@
             this.unitPriceDataGridViewTextBoxColumn,
             this.quantiyDataGridViewTextBoxColumn});
             this.dataGridView.DataSource = this.orderDetailsBindingSource;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(446, 150);
+            this.dataGridView.Size = new System.Drawing.Size(446, 256);
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellEndEdit);
             // 
@@ -99,11 +99,22 @@
             // 
             this.orderDetailsTableAdapter.ClearBeforeFill = true;
             // 
+            // ExportOrderDetailsButton
+            // 
+            this.ExportOrderDetailsButton.Location = new System.Drawing.Point(359, 272);
+            this.ExportOrderDetailsButton.Name = "ExportOrderDetailsButton";
+            this.ExportOrderDetailsButton.Size = new System.Drawing.Size(75, 23);
+            this.ExportOrderDetailsButton.TabIndex = 1;
+            this.ExportOrderDetailsButton.Text = "Export";
+            this.ExportOrderDetailsButton.UseVisualStyleBackColor = true;
+            this.ExportOrderDetailsButton.Click += new System.EventHandler(this.ExportOrderDetailsButton_Click);
+            // 
             // EditOrderDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 150);
+            this.ClientSize = new System.Drawing.Size(446, 307);
+            this.Controls.Add(this.ExportOrderDetailsButton);
             this.Controls.Add(this.dataGridView);
             this.Name = "EditOrderDetailsForm";
             this.Text = "Промяна на детайли по поръчките";
@@ -125,5 +136,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitPriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantiyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button ExportOrderDetailsButton;
     }
 }

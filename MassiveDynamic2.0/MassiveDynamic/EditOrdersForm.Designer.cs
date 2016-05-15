@@ -34,19 +34,20 @@
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shipViaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.massiveDynamicDataSet = new MassiveDynamic.MassiveDynamicDataSet();
+            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.OrdersTableAdapter();
             this.ordersShippersDataSet = new MassiveDynamic.OrdersShippersDataSet();
             this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter1 = new MassiveDynamic.OrdersShippersDataSetTableAdapters.OrdersTableAdapter();
-            this.ordersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.exportEditOrdersButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EditOrdersDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersShippersDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // EditOrdersDataGrid
@@ -61,12 +62,10 @@
             this.orderDateDataGridViewTextBoxColumn,
             this.shipViaDataGridViewTextBoxColumn});
             this.EditOrdersDataGrid.DataSource = this.ordersBindingSource2;
-            this.EditOrdersDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EditOrdersDataGrid.Location = new System.Drawing.Point(0, 0);
             this.EditOrdersDataGrid.Name = "EditOrdersDataGrid";
-            this.EditOrdersDataGrid.Size = new System.Drawing.Size(446, 152);
+            this.EditOrdersDataGrid.Size = new System.Drawing.Size(446, 291);
             this.EditOrdersDataGrid.TabIndex = 0;
-    
             this.EditOrdersDataGrid.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.EditOrdersDataGrid_CellEndEdit);
             // 
             // orderIDDataGridViewTextBoxColumn
@@ -93,15 +92,20 @@
             this.shipViaDataGridViewTextBoxColumn.HeaderText = "ShipVia";
             this.shipViaDataGridViewTextBoxColumn.Name = "shipViaDataGridViewTextBoxColumn";
             // 
-            // ordersBindingSource
+            // ordersBindingSource2
             // 
-            this.ordersBindingSource.DataMember = "Orders";
-            this.ordersBindingSource.DataSource = this.massiveDynamicDataSet;
+            this.ordersBindingSource2.DataMember = "Orders";
+            this.ordersBindingSource2.DataSource = this.massiveDynamicDataSet;
             // 
             // massiveDynamicDataSet
             // 
             this.massiveDynamicDataSet.DataSetName = "MassiveDynamicDataSet";
             this.massiveDynamicDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ordersBindingSource
+            // 
+            this.ordersBindingSource.DataMember = "Orders";
+            this.ordersBindingSource.DataSource = this.massiveDynamicDataSet;
             // 
             // ordersTableAdapter
             // 
@@ -121,26 +125,32 @@
             // 
             this.ordersTableAdapter1.ClearBeforeFill = true;
             // 
-            // ordersBindingSource2
+            // exportEditOrdersButton
             // 
-            this.ordersBindingSource2.DataMember = "Orders";
-            this.ordersBindingSource2.DataSource = this.massiveDynamicDataSet;
+            this.exportEditOrdersButton.Location = new System.Drawing.Point(359, 309);
+            this.exportEditOrdersButton.Name = "exportEditOrdersButton";
+            this.exportEditOrdersButton.Size = new System.Drawing.Size(75, 23);
+            this.exportEditOrdersButton.TabIndex = 1;
+            this.exportEditOrdersButton.Text = "Export";
+            this.exportEditOrdersButton.UseVisualStyleBackColor = true;
+            this.exportEditOrdersButton.Click += new System.EventHandler(this.exportEditOrdersButton_Click);
             // 
             // EditOrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 152);
+            this.ClientSize = new System.Drawing.Size(446, 355);
+            this.Controls.Add(this.exportEditOrdersButton);
             this.Controls.Add(this.EditOrdersDataGrid);
             this.Name = "EditOrdersForm";
             this.Text = "EditOrdersForm";
             this.Load += new System.EventHandler(this.EditOrdersForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EditOrdersDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersShippersDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,5 +169,6 @@
         private System.Windows.Forms.BindingSource ordersBindingSource1;
         private OrdersShippersDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter1;
         private System.Windows.Forms.BindingSource ordersBindingSource2;
+        private System.Windows.Forms.Button exportEditOrdersButton;
     }
 }
