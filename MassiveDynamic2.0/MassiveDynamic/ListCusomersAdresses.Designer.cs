@@ -36,20 +36,24 @@
             this.SearchButton = new System.Windows.Forms.Button();
             this.customersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.CustomersTableAdapter();
             this.resultsGroupBox = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.OrdersTableAdapter();
             this.fKOrderDetailsOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.orderDetailsTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.OrderDetailsTableAdapter();
             this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.OrderDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.massiveDynamicDataSet1 = new MassiveDynamic.MassiveDynamicDataSet();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.massiveDynamicDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).BeginInit();
             this.resultsGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrderDetailsOrdersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,13 +68,13 @@
             // NameOfCompanyDropDown
             // 
             this.NameOfCompanyDropDown.DataSource = this.customersBindingSource;
-            this.NameOfCompanyDropDown.DisplayMember = "CompanyName";
+            this.NameOfCompanyDropDown.DisplayMember = "CustomerID";
             this.NameOfCompanyDropDown.FormattingEnabled = true;
             this.NameOfCompanyDropDown.Location = new System.Drawing.Point(140, 28);
             this.NameOfCompanyDropDown.Name = "NameOfCompanyDropDown";
             this.NameOfCompanyDropDown.Size = new System.Drawing.Size(121, 21);
             this.NameOfCompanyDropDown.TabIndex = 1;
-            this.NameOfCompanyDropDown.ValueMember = "CompanyName";
+            this.NameOfCompanyDropDown.ValueMember = "CustomerID";
             // 
             // customersBindingSource
             // 
@@ -106,22 +110,6 @@
             this.resultsGroupBox.TabStop = false;
             this.resultsGroupBox.Text = "Резултати";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.OrderDate});
-            this.dataGridView1.DataSource = this.massiveDynamicDataSet;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(497, 106);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // ordersBindingSource
             // 
             this.ordersBindingSource.DataMember = "Orders";
@@ -145,12 +133,37 @@
             this.ordersBindingSource1.DataMember = "Orders";
             this.ordersBindingSource1.DataSource = this.massiveDynamicDataSet;
             // 
-            // OrderDate
+            // massiveDynamicDataSet1
             // 
-            this.OrderDate.DataPropertyName = "OrderDate";
-            this.OrderDate.HeaderText = "OrderDate";
-            this.OrderDate.Name = "OrderDate";
-            this.OrderDate.ReadOnly = true;
+            this.massiveDynamicDataSet1.DataSetName = "MassiveDynamicDataSet";
+            this.massiveDynamicDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.addressDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.customersBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(497, 150);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // massiveDynamicDataSetBindingSource
+            // 
+            this.massiveDynamicDataSetBindingSource.DataSource = this.massiveDynamicDataSet;
+            this.massiveDynamicDataSetBindingSource.Position = 0;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ListCusomersAdresses
             // 
@@ -167,10 +180,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).EndInit();
             this.resultsGroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrderDetailsOrdersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,12 +200,14 @@
         private System.Windows.Forms.BindingSource customersBindingSource;
         private MassiveDynamicDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.GroupBox resultsGroupBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource ordersBindingSource;
         private MassiveDynamicDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
         private System.Windows.Forms.BindingSource fKOrderDetailsOrdersBindingSource;
         private MassiveDynamicDataSetTableAdapters.OrderDetailsTableAdapter orderDetailsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OrderDate;
         private System.Windows.Forms.BindingSource ordersBindingSource1;
+        private MassiveDynamicDataSet massiveDynamicDataSet1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource massiveDynamicDataSetBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
     }
 }

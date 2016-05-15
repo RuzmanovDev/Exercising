@@ -34,7 +34,7 @@ namespace MassiveDynamic
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ConfigurationManager.ConnectionStrings["MassiveDynamic.Properties.Settings.MassiveDynamicConnectionString"].ConnectionString;
 
-            string command = String.Format("select OrderDate from Customers, Orders where CompanyName='{0}'", NameOfCompanyDropDown.Text);
+            string command = String.Format("select Address from Customers where CustomerID='{0}'", NameOfCompanyDropDown.Text);
 
             SqlCommand com = new SqlCommand(command, con);
             com.CommandType = CommandType.Text;
@@ -70,6 +70,7 @@ namespace MassiveDynamic
             {
                 dataGridView1.DataSource = ds.Tables[0];
                 resultsGroupBox.Visible = true;
+                MessageBox.Show("{0}");
             }
             else
             {
