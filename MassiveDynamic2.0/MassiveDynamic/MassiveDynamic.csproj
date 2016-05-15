@@ -84,10 +84,21 @@
     <Compile Include="AddShipperForm.Designer.cs">
       <DependentUpon>AddShipperForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customers-Orders-Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers-Orders-Master.Designer.cs">
+      <DependentUpon>Customers-Orders-Master.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomersDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersOrdersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersOrdersDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DeleteCategoryForm.cs">
       <SubType>Form</SubType>
@@ -160,6 +171,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MassiveDynamicDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MassiveDynamicDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MassiveDynamicDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MassiveDynamicMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddShipperForm.resx">
       <DependentUpon>AddShipperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers-Orders-Master.resx">
+      <DependentUpon>Customers-Orders-Master.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteCategoryForm.resx">
       <DependentUpon>DeleteCategoryForm.cs</DependentUpon>
@@ -275,6 +294,17 @@
     <None Include="CustomersDataSet1.xss">
       <DependentUpon>CustomersDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="CustomersOrdersDataSet.xsc">
+      <DependentUpon>CustomersOrdersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomersOrdersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomersOrdersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomersOrdersDataSet.xss">
+      <DependentUpon>CustomersOrdersDataSet.xsd</DependentUpon>
+    </None>
     <None Include="MassiveDynamicDataSet.xsc">
       <DependentUpon>MassiveDynamicDataSet.xsd</DependentUpon>
     </None>
@@ -285,6 +315,17 @@
     </None>
     <None Include="MassiveDynamicDataSet.xss">
       <DependentUpon>MassiveDynamicDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveDynamicDataSet1.xsc">
+      <DependentUpon>MassiveDynamicDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveDynamicDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MassiveDynamicDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MassiveDynamicDataSet1.xss">
+      <DependentUpon>MassiveDynamicDataSet1.xsd</DependentUpon>
     </None>
     <None Include="OrdersDataSet1.xsc">
       <DependentUpon>OrdersDataSet1.xsd</DependentUpon>

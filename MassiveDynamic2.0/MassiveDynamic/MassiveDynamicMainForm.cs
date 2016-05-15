@@ -132,5 +132,11 @@ namespace MassiveDynamic
             EditOrderDetailsForm edit = new EditOrderDetailsForm();
             edit.ShowDialog();
         }
+
+        private void ordersCustomersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Customers_Orders_Master work = new Customers_Orders_Master();
+            work.ShowDialog();
+        }
     }
 }
