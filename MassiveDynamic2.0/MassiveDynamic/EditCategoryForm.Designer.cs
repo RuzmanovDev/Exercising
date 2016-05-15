@@ -36,6 +36,7 @@
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.massiveDynamicDataSet = new MassiveDynamic.MassiveDynamicDataSet();
             this.categoriesTableAdapter = new MassiveDynamic.MassiveDynamicDataSetTableAdapters.CategoriesTableAdapter();
+            this.CategoryExportButtom = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EditCategoryGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet)).BeginInit();
@@ -89,11 +90,22 @@
             // 
             this.categoriesTableAdapter.ClearBeforeFill = true;
             // 
+            // CategoryExportButtom
+            // 
+            this.CategoryExportButtom.Location = new System.Drawing.Point(230, 277);
+            this.CategoryExportButtom.Name = "CategoryExportButtom";
+            this.CategoryExportButtom.Size = new System.Drawing.Size(101, 23);
+            this.CategoryExportButtom.TabIndex = 1;
+            this.CategoryExportButtom.Text = "Export ";
+            this.CategoryExportButtom.UseVisualStyleBackColor = true;
+            this.CategoryExportButtom.Click += new System.EventHandler(this.CategoryExportButtom_Click);
+            // 
             // EditCategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 262);
+            this.ClientSize = new System.Drawing.Size(343, 312);
+            this.Controls.Add(this.CategoryExportButtom);
             this.Controls.Add(this.EditCategoryGrid);
             this.Name = "EditCategoryForm";
             this.Text = "EditCategoryForm";
@@ -114,5 +126,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button CategoryExportButtom;
     }
 }
