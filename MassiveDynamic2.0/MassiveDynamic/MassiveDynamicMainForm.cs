@@ -37,7 +37,8 @@ namespace MassiveDynamic
 
         private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Master_detail_orders_shippers md = new Master_detail_orders_shippers();
+            OrderOrderDetails md = new OrderOrderDetails();
+           
             md.ShowDialog();
         }
 

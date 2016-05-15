@@ -29,37 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers_Orders_Master));
             System.Windows.Forms.Label orderIDLabel;
-            System.Windows.Forms.Label customerIDLabel;
-            System.Windows.Forms.Label orderDateLabel;
-            System.Windows.Forms.Label shipViaLabel;
             System.Windows.Forms.Label companyNameLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers_Orders_Master));
             this.massiveDynamicDataSet1 = new MassiveDynamic.MassiveDynamicDataSet1();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter = new MassiveDynamic.MassiveDynamicDataSet1TableAdapters.OrdersTableAdapter();
             this.tableAdapterManager = new MassiveDynamic.MassiveDynamicDataSet1TableAdapters.TableAdapterManager();
+            this.customersTableAdapter = new MassiveDynamic.MassiveDynamicDataSet1TableAdapters.CustomersTableAdapter();
             this.ordersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.ordersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.orderIDComboBox = new System.Windows.Forms.ComboBox();
-            this.customerIDTextBox = new System.Windows.Forms.TextBox();
-            this.orderDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.shipViaTextBox = new System.Windows.Forms.TextBox();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customersTableAdapter = new MassiveDynamic.MassiveDynamicDataSet1TableAdapters.CustomersTableAdapter();
-            this.ordersDataSet1 = new MassiveDynamic.OrdersDataSet1();
             this.ordersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersDataSet1 = new MassiveDynamic.OrdersDataSet1();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersTableAdapter1 = new MassiveDynamic.OrdersDataSet1TableAdapters.OrdersTableAdapter();
             this.customersDataSet1 = new MassiveDynamic.CustomersDataSet1();
             this.customersTableAdapter1 = new MassiveDynamic.CustomersDataSet1TableAdapters.CustomersTableAdapter();
@@ -71,17 +65,14 @@
             this.fKOrdersCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.companyNameComboBox = new System.Windows.Forms.ComboBox();
             orderIDLabel = new System.Windows.Forms.Label();
-            customerIDLabel = new System.Windows.Forms.Label();
-            orderDateLabel = new System.Windows.Forms.Label();
-            shipViaLabel = new System.Windows.Forms.Label();
             companyNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.massiveDynamicDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingNavigator)).BeginInit();
             this.ordersBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersOrdersDataSet)).BeginInit();
@@ -89,6 +80,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKOrdersCustomersBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // orderIDLabel
+            // 
+            orderIDLabel.AutoSize = true;
+            orderIDLabel.Location = new System.Drawing.Point(22, 35);
+            orderIDLabel.Name = "orderIDLabel";
+            orderIDLabel.Size = new System.Drawing.Size(50, 13);
+            orderIDLabel.TabIndex = 1;
+            orderIDLabel.Text = "Order ID:";
+            // 
+            // companyNameLabel
+            // 
+            companyNameLabel.AutoSize = true;
+            companyNameLabel.Location = new System.Drawing.Point(22, 71);
+            companyNameLabel.Name = "companyNameLabel";
+            companyNameLabel.Size = new System.Drawing.Size(85, 13);
+            companyNameLabel.TabIndex = 9;
+            companyNameLabel.Text = "Company Name:";
             // 
             // massiveDynamicDataSet1
             // 
@@ -110,6 +119,10 @@
             this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
             this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
             this.tableAdapterManager.UpdateOrder = MassiveDynamic.MassiveDynamicDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // customersTableAdapter
+            // 
+            this.customersTableAdapter.ClearBeforeFill = true;
             // 
             // ordersBindingNavigator
             // 
@@ -137,9 +150,34 @@
             this.ordersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.ordersBindingNavigator.Name = "ordersBindingNavigator";
             this.ordersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.ordersBindingNavigator.Size = new System.Drawing.Size(428, 25);
+            this.ordersBindingNavigator.Size = new System.Drawing.Size(318, 25);
             this.ordersBindingNavigator.TabIndex = 0;
             this.ordersBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -173,17 +211,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -191,7 +222,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -200,49 +231,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // ordersBindingNavigatorSaveItem
             // 
             this.ordersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.ordersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("ordersBindingNavigatorSaveItem.Image")));
             this.ordersBindingNavigatorSaveItem.Name = "ordersBindingNavigatorSaveItem";
-            this.ordersBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.ordersBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.ordersBindingNavigatorSaveItem.Text = "Save Data";
             this.ordersBindingNavigatorSaveItem.Click += new System.EventHandler(this.ordersBindingNavigatorSaveItem_Click);
-            // 
-            // orderIDLabel
-            // 
-            orderIDLabel.AutoSize = true;
-            orderIDLabel.Location = new System.Drawing.Point(22, 35);
-            orderIDLabel.Name = "orderIDLabel";
-            orderIDLabel.Size = new System.Drawing.Size(50, 13);
-            orderIDLabel.TabIndex = 1;
-            orderIDLabel.Text = "Order ID:";
             // 
             // orderIDComboBox
             // 
@@ -256,75 +260,20 @@
             this.orderIDComboBox.TabIndex = 2;
             this.orderIDComboBox.ValueMember = "OrderID";
             // 
-            // customerIDLabel
+            // ordersBindingSource1
             // 
-            customerIDLabel.AutoSize = true;
-            customerIDLabel.Location = new System.Drawing.Point(22, 62);
-            customerIDLabel.Name = "customerIDLabel";
-            customerIDLabel.Size = new System.Drawing.Size(68, 13);
-            customerIDLabel.TabIndex = 3;
-            customerIDLabel.Text = "Customer ID:";
-            // 
-            // customerIDTextBox
-            // 
-            this.customerIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "CustomerID", true));
-            this.customerIDTextBox.Location = new System.Drawing.Point(96, 59);
-            this.customerIDTextBox.Name = "customerIDTextBox";
-            this.customerIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.customerIDTextBox.TabIndex = 4;
-            // 
-            // orderDateLabel
-            // 
-            orderDateLabel.AutoSize = true;
-            orderDateLabel.Location = new System.Drawing.Point(22, 89);
-            orderDateLabel.Name = "orderDateLabel";
-            orderDateLabel.Size = new System.Drawing.Size(62, 13);
-            orderDateLabel.TabIndex = 5;
-            orderDateLabel.Text = "Order Date:";
-            // 
-            // orderDateDateTimePicker
-            // 
-            this.orderDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "OrderDate", true));
-            this.orderDateDateTimePicker.Location = new System.Drawing.Point(96, 85);
-            this.orderDateDateTimePicker.Name = "orderDateDateTimePicker";
-            this.orderDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.orderDateDateTimePicker.TabIndex = 6;
-            // 
-            // shipViaLabel
-            // 
-            shipViaLabel.AutoSize = true;
-            shipViaLabel.Location = new System.Drawing.Point(22, 114);
-            shipViaLabel.Name = "shipViaLabel";
-            shipViaLabel.Size = new System.Drawing.Size(49, 13);
-            shipViaLabel.TabIndex = 7;
-            shipViaLabel.Text = "Ship Via:";
-            // 
-            // shipViaTextBox
-            // 
-            this.shipViaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "ShipVia", true));
-            this.shipViaTextBox.Location = new System.Drawing.Point(96, 111);
-            this.shipViaTextBox.Name = "shipViaTextBox";
-            this.shipViaTextBox.Size = new System.Drawing.Size(200, 20);
-            this.shipViaTextBox.TabIndex = 8;
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.massiveDynamicDataSet1;
-            // 
-            // customersTableAdapter
-            // 
-            this.customersTableAdapter.ClearBeforeFill = true;
+            this.ordersBindingSource1.DataMember = "Orders";
+            this.ordersBindingSource1.DataSource = this.ordersDataSet1;
             // 
             // ordersDataSet1
             // 
             this.ordersDataSet1.DataSetName = "OrdersDataSet1";
             this.ordersDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // ordersBindingSource1
+            // customersBindingSource
             // 
-            this.ordersBindingSource1.DataMember = "Orders";
-            this.ordersBindingSource1.DataSource = this.ordersDataSet1;
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.massiveDynamicDataSet1;
             // 
             // ordersTableAdapter1
             // 
@@ -370,15 +319,6 @@
             this.fKOrdersCustomersBindingSource.DataMember = "FK_Orders_Customers";
             this.fKOrdersCustomersBindingSource.DataSource = this.customersBindingSource;
             // 
-            // companyNameLabel
-            // 
-            companyNameLabel.AutoSize = true;
-            companyNameLabel.Location = new System.Drawing.Point(22, 145);
-            companyNameLabel.Name = "companyNameLabel";
-            companyNameLabel.Size = new System.Drawing.Size(85, 13);
-            companyNameLabel.TabIndex = 9;
-            companyNameLabel.Text = "Company Name:";
-            // 
             // companyNameComboBox
             // 
             this.companyNameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource1, "CompanyName", true));
@@ -386,7 +326,7 @@
             this.companyNameComboBox.DataSource = this.customersBindingSource1;
             this.companyNameComboBox.DisplayMember = "CompanyName";
             this.companyNameComboBox.FormattingEnabled = true;
-            this.companyNameComboBox.Location = new System.Drawing.Point(113, 142);
+            this.companyNameComboBox.Location = new System.Drawing.Point(113, 71);
             this.companyNameComboBox.Name = "companyNameComboBox";
             this.companyNameComboBox.Size = new System.Drawing.Size(121, 21);
             this.companyNameComboBox.TabIndex = 10;
@@ -396,17 +336,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 220);
+            this.ClientSize = new System.Drawing.Size(318, 119);
             this.Controls.Add(companyNameLabel);
             this.Controls.Add(this.companyNameComboBox);
             this.Controls.Add(orderIDLabel);
             this.Controls.Add(this.orderIDComboBox);
-            this.Controls.Add(customerIDLabel);
-            this.Controls.Add(this.customerIDTextBox);
-            this.Controls.Add(orderDateLabel);
-            this.Controls.Add(this.orderDateDateTimePicker);
-            this.Controls.Add(shipViaLabel);
-            this.Controls.Add(this.shipViaTextBox);
             this.Controls.Add(this.ordersBindingNavigator);
             this.Name = "Customers_Orders_Master";
             this.Text = "Customers_Orders_Master";
@@ -416,9 +350,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingNavigator)).EndInit();
             this.ordersBindingNavigator.ResumeLayout(false);
             this.ordersBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordersDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersOrdersDataSet)).EndInit();
@@ -451,9 +385,6 @@
         private System.Windows.Forms.ToolStripButton ordersBindingNavigatorSaveItem;
         private MassiveDynamicDataSet1TableAdapters.CustomersTableAdapter customersTableAdapter;
         private System.Windows.Forms.ComboBox orderIDComboBox;
-        private System.Windows.Forms.TextBox customerIDTextBox;
-        private System.Windows.Forms.DateTimePicker orderDateDateTimePicker;
-        private System.Windows.Forms.TextBox shipViaTextBox;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private OrdersDataSet1 ordersDataSet1;
         private System.Windows.Forms.BindingSource ordersBindingSource1;

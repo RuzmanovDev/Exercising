@@ -176,6 +176,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MassiveDynamicDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MassiveDynamicDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MassiveDynamicDataSet21.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MassiveDynamicMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +192,17 @@
     </Compile>
     <Compile Include="Master-detail-orders-shippers.Designer.cs">
       <DependentUpon>Master-detail-orders-shippers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrderOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderOrderDetails.Designer.cs">
+      <DependentUpon>OrderOrderDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="OrdersDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -271,6 +287,9 @@
     <EmbeddedResource Include="Master-detail-orders-shippers.resx">
       <DependentUpon>Master-detail-orders-shippers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderOrderDetails.resx">
+      <DependentUpon>OrderOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -326,6 +345,28 @@
     </None>
     <None Include="MassiveDynamicDataSet1.xss">
       <DependentUpon>MassiveDynamicDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveDynamicDataSet21.xsc">
+      <DependentUpon>MassiveDynamicDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveDynamicDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MassiveDynamicDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MassiveDynamicDataSet21.xss">
+      <DependentUpon>MassiveDynamicDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDetails.xsc">
+      <DependentUpon>OrderDetails.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrderDetails.xss">
+      <DependentUpon>OrderDetails.xsd</DependentUpon>
     </None>
     <None Include="OrdersDataSet1.xsc">
       <DependentUpon>OrdersDataSet1.xsd</DependentUpon>
