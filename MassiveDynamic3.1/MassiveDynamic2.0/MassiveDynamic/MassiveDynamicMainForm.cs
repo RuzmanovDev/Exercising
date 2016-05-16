@@ -151,5 +151,11 @@ namespace MassiveDynamic
             ListPriceByGivenName list = new ListPriceByGivenName();
             list.ShowDialog();
         }
+
+        private void shipViaByOrderIDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListShipViaByOrderID lsbo = new ListShipViaByOrderID();
+            lsbo.ShowDialog();
+        }
     }
 }

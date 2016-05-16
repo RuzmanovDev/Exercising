@@ -183,6 +183,12 @@
     <Compile Include="ListPriceByGivenName.Designer.cs">
       <DependentUpon>ListPriceByGivenName.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListShipViaByOrderID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListShipViaByOrderID.Designer.cs">
+      <DependentUpon>ListShipViaByOrderID.cs</DependentUpon>
+    </Compile>
     <Compile Include="MassiveDynamicDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListPriceByGivenName.resx">
       <DependentUpon>ListPriceByGivenName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListShipViaByOrderID.resx">
+      <DependentUpon>ListShipViaByOrderID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MassiveDynamicMainForm.resx">
       <DependentUpon>MassiveDynamicMainForm.cs</DependentUpon>
