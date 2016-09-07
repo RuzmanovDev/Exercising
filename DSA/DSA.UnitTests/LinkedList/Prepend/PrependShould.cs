@@ -22,7 +22,7 @@ namespace DSA.UnitTests.LinkedList.Prepend
 
             Assert.AreSame(list.Head, node);
             Assert.AreSame(list.Tail, node);
-            Assert.AreEqual(list.Length, 1);
+            Assert.AreEqual(list.Count, 1);
         }
 
         [Test]
@@ -39,7 +39,7 @@ namespace DSA.UnitTests.LinkedList.Prepend
 
             Assert.AreSame(list.Head, node3);
             Assert.AreSame(list.Tail, node);
-            Assert.AreEqual(list.Length, 3);
+            Assert.AreEqual(list.Count, 3);
         }
     }
 }

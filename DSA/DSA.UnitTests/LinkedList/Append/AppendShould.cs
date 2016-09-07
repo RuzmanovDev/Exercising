@@ -20,7 +20,7 @@ namespace DSA.UnitTests.LinkedList.Append
             list.Append(nodeToAdd);
 
             Assert.AreSame(list.Head, nodeToAdd);
-            Assert.AreEqual(list.Length, 1);
+            Assert.AreEqual(list.Count, 1);
         }
 
         [Test]
@@ -35,7 +35,7 @@ namespace DSA.UnitTests.LinkedList.Append
             list.Append(secondNode);
             list.Append(thirdNode);
 
-            Assert.AreEqual(list.Length, 3);
+            Assert.AreEqual(list.Count, 3);
         }
     }
 }

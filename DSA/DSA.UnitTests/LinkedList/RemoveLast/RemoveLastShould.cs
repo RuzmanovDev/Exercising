@@ -23,7 +23,7 @@ namespace DSA.UnitTests.LinkedList.RemoveLast
             list.RemoveLast();
 
             Assert.AreSame(list.Head, firstNode);
-            Assert.AreEqual(list.Length, 1);
+            Assert.AreEqual(list.Count, 1);
         }
     }
 }

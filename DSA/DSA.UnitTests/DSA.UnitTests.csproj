@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LinkedList\Append\AppendShould.cs" />
+    <Compile Include="LinkedList\Foreach\LinkedListShould.cs" />
     <Compile Include="LinkedList\Prepend\PrependShould.cs" />
     <Compile Include="LinkedList\RemoveFirst\RemoveFirstShould.cs" />
     <Compile Include="LinkedList\RemoveLast\RemoveLastShould.cs" />

@@ -9,18 +9,31 @@ namespace DataStructures
 {
     public class Node<T>
     {
+        public Node(T value)
+        {
+            this.Value = value;
+        }
         public T Value { get; set; }
 
         public Node<T> Next { get; set; }
 
     }
 
-    public class MyLinkedList<T> : IEnumerable<T>
+    public class MyLinkedList<T> : ICollection<T>
     {
         public Node<T> Head { get; private set; }
         public Node<T> Tail { get; private set; }
 
-        public int Length { get; private set; }
+        public int Count { get; private set; }
+
+
+        public bool IsReadOnly
+        {
+            get
+            {
+                return false;
+            }
+        }
 
         public void Append(Node<T> node)
         {
@@ -34,12 +47,12 @@ namespace DataStructures
             }
 
             this.Tail = node;
-            this.Length++;
+            this.Count++;
         }
 
         public void Prepend(Node<T> node)
         {
-            if (this.Length == 0)
+            if (this.Count == 0)
             {
                 this.Append(node);
             }
@@ -50,9 +63,9 @@ namespace DataStructures
                 this.Head = node;
                 this.Head.Next = oldHead;
 
-                this.Length++;
+                this.Count++;
 
-                if (this.Length == 1)
+                if (this.Count == 1)
                 {
                     this.Head = this.Tail;
                 }
@@ -63,7 +76,7 @@ namespace DataStructures
         {
             var newHead = this.Head.Next;
             this.Head = newHead;
-            this.Length--;
+            this.Count--;
         }
 
         public void RemoveLast()
@@ -78,7 +91,7 @@ namespace DataStructures
             currentNode.Next = null;
             this.Tail = currentNode;
 
-            this.Length--;
+            this.Count--;
         }
 
         public override string ToString()
@@ -91,7 +104,7 @@ namespace DataStructures
         public T[] ToArray()
         {
             var node = this.Head;
-            var array = new T[this.Length];
+            var array = new T[this.Count];
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -115,6 +128,31 @@ namespace DataStructures
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
+        }
+
+        public void Add(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Clear()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Contains(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CopyTo(T[] array, int arrayIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Remove(T item)
+        {
+            throw new NotImplementedException();
         }
     }
 }
