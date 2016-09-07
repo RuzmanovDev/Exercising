@@ -74,6 +74,9 @@
   <ItemGroup>
     <Compile Include="LinkedList\Append\AppendShould.cs" />
     <Compile Include="LinkedList\Prepend\PrependShould.cs" />
+    <Compile Include="LinkedList\RemoveFirst\RemoveFirstShould.cs" />
+    <Compile Include="LinkedList\RemoveLast\RemoveLastShould.cs" />
+    <Compile Include="LinkedList\ToString\ToStringShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
