@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace DataStructures
 
     }
 
-    public class MyLinkedList<T>
+    public class MyLinkedList<T> : IEnumerable<T>
     {
         public Node<T> Head { get; private set; }
         public Node<T> Tail { get; private set; }
@@ -99,6 +100,21 @@ namespace DataStructures
             }
 
             return array;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            var values = this.ToArray();
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                yield return values[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
     }
 }

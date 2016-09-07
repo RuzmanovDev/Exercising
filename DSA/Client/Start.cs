@@ -13,19 +13,16 @@ namespace Client
         {
             var list = new MyLinkedList<int>();
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
                 var node = new Node<int>() { Value = i };
 
                 list.Append(node);
             }
 
-            Console.WriteLine(list.ToString());
-            var arr = list.ToArray();
-
-            foreach (var item in arr)
+            foreach (var v in list)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(v);
             }
         }
     }
