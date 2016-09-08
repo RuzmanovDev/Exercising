@@ -132,7 +132,7 @@ namespace DataStructures
 
         public void Add(T item)
         {
-            throw new NotImplementedException();
+            this.Append(new Node<T>(item));
         }
 
         public void Clear()
