@@ -230,6 +230,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\TripController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -242,6 +243,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\google-maps.css" />
     <Content Include="Content\materialize-v0.97.5\css\materialize.css" />
     <Content Include="Content\materialize-v0.97.5\css\materialize.min.css" />
     <Content Include="Content\materialize-v0.97.5\font\material-design-icons\LICENSE.txt" />
@@ -343,6 +345,9 @@
     <Content Include="Views\News\Sport.cshtml" />
     <Content Include="Views\Shared\AjaxTest.cshtml" />
     <Content Include="Views\Home\TestHomePage.cshtml" />
+    <Content Include="Views\Shared\_TripInfo.cshtml" />
+    <Content Include="Views\Trip\TripDetails.cshtml" />
+    <Content Include="Views\Shared\_RecentTrips.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
