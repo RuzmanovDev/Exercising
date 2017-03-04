@@ -41,21 +41,27 @@ namespace Test
           );
 
             routes.MapRoute(
+            name: "GetTownsApi",
+            url: "api/trip/{action}",
+            defaults: new { controller = "Trip", action = "GetTowns"}
+        );
+
+            routes.MapRoute(
                name: "Default",
                url: "{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
 
            );
 
-            //routes.MapRoute(
-            //name: "Comments",
-            //url: "comments/{controller}/{action}/{page}",
-            //defaults: new
-            //{
-            //    controller = "Home",
-            //    action = nameof(HomeController.LoadComments),
-            //    page = UrlParameter.Optional
-            //});
+            routes.MapRoute(
+            name: "Comments",
+            url: "comments/{controller}/{action}/{page}",
+            defaults: new
+            {
+                controller = "Home",
+                action = nameof(HomeController.LoadComments),
+                page = UrlParameter.Optional
+            });
 
 
         }

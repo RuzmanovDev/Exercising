@@ -5,9 +5,25 @@
             <h4>Порталът за споделено пътуване, който предлага повече</h4>
             <a href="#" class="btn">Как работи</a>
             <form class="quick-travel-search">
-                <input type="text" name="name" value="" class="quick-travel-search-input" placeholder="От" />
-                <input type="text" name="name" value="" class="quick-travel-search-input" placeholder="До" />
-                <input type="submit" value="Find" class="btn">
+                <div class="col l3 offset-l3">
+                    <select class="quick-travel-search-input">
+                        <option value="" disabled selected>От</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div class="col l3">
+                    <select class="quick-travel-search-input">
+                        <option value="" disabled selected>До</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div class="col l1">
+                    <input type="submit" value="Търсене" class="btn">
+                </div>
             </form>
         </div>
     </div>
@@ -20,3 +36,13 @@
     </div>
 </div>
 
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+
+
+    </script>
+}

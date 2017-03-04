@@ -22,12 +22,12 @@ namespace Test
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                        //"~/Scripts/bootstrap.js",
-                       "~/Content/materialize-v0.97.5/js/materialize.js",
+                       "~/Content/materialize/js/materialize.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       //"~/Content/bootstrap.css",
-                      "~/Content/materialize-v0.97.5/css/materialize.css",
+                      "~/Content/materialize/css/materialize.css",
                       "~/Content/Site.css"));
         }
     }

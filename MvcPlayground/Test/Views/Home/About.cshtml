@@ -1,8 +1,18 @@
 ﻿<div class="row">
-    <b>Start: </b>
-    <input id="start" />
-    <b>End: </b>
-    <input id="end" />
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <div class="input-field">
+            <input type="text" id="start" class="autocomplete">
+            <label for="start">Start</label>
+        </div>
+        <div class="input-field">
+
+            <input type="text" id="end" class="autocomplete">
+            <label for="end">End</label>
+        </div>
+            <button id="search" class="btn">Search</button>
+    }
+
     <div id="map" style="height:500px;width:500px"></div>
 </div>
 <script>
@@ -18,8 +28,7 @@
         var onChangeHandler = function () {
             calculateAndDisplayRoute(directionsService, directionsDisplay);
         };
-        document.getElementById('start').addEventListener('change', onChangeHandler);
-        document.getElementById('end').addEventListener('change', onChangeHandler);
+        document.getElementById('search').addEventListener('click', onChangeHandler);
     }
 
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
@@ -43,7 +52,28 @@
 @section scripts{
     <script>
         $(document).ready(function () {
-            $('select').material_select();
+            Materialize.updateTextFields();
+
+            $.ajax({
+                url: "/home/towns",
+                type: "GET",
+                dataType: "json",
+                success: function (dataFromTheServer) {
+                    console.log(dataFromTheServer);
+
+                    var dataItems = {};
+
+                    for (var item of dataFromTheServer) {
+                        dataItems[item.Name] = null;
+                    }
+
+                    $('.autocomplete').autocomplete({
+                        data: dataItems
+                    });
+                }
+            })
         });
+
+
     </script>
 }

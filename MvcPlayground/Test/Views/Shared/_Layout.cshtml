@@ -17,6 +17,7 @@
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("About", "About", "Home")</li>
                 <li>@Html.ActionLink("Начало", "TestHomePage", "Home")</li>
+                <li><a href="trip/creatingtrip"> Създаване на пътуване</a></li>
             </ul>
             @Html.Partial("_LoginPartial")
         </div>
@@ -52,12 +53,10 @@
     </footer>
 
     @Scripts.Render("~/bundles/jquery")
+    @*<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>*@
     @Scripts.Render("~/bundles/bootstrap")
+
+    <!-- Compiled and minified JavaScript -->
     @RenderSection("scripts", required: false)
-    @*<script>
-            $(document).ready(function () {
-                $('select').material_select();
-            });
-        </script>*@
 </body>
 </html>

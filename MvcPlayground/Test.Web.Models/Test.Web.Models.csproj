@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountViewModels.cs" />
+    <Compile Include="CreatingTripViewModel.cs" />
     <Compile Include="HomePageViewModel.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="ManageViewModels.cs" />
